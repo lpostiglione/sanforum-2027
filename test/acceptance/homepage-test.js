@@ -27,8 +27,6 @@ acceptance("SanForum homepage", function (needs) {
       themeMeta.name = "discourse_theme_id";
       document.head.appendChild(themeMeta);
     }
-    themeMeta.content = "8102";
-    setDefaultHomepage("custom");
   });
 
   needs.hooks.afterEach(function () {
@@ -111,6 +109,8 @@ acceptance("SanForum homepage", function (needs) {
   });
 
   test("renders both native lists and excerpts without fetching full topics", async function (assert) {
+    themeMeta.content = "8102";
+    setDefaultHomepage("custom");
     await visit("/");
 
     assert.dom('.sanforum-home-nav a[href="#sanforum-categories"]').exists();
