@@ -1,2 +1,4 @@
 node_modules
 .discourse-site
+# Signed-in browser captures and local review evidence
+.impeccable/review/

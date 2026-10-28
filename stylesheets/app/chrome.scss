@@ -1,0 +1,126 @@
+html {
+  scroll-padding-top: 6rem;
+  scrollbar-color: var(--primary-low-mid) var(--secondary);
+}
+
+body {
+  background: var(--secondary);
+  line-height: 1.5;
+}
+
+::selection {
+  color: var(--primary);
+  background: var(--tertiary-low);
+}
+
+input,
+textarea,
+[contenteditable="true"] {
+  caret-color: var(--tertiary);
+}
+
+::placeholder {
+  color: var(--t-SanForum2027FachjournalPreview-color-text-muted);
+  opacity: 1;
+}
+
+a {
+  color: var(--t-SanForum2027FachjournalPreview-color-text-accent);
+  text-underline-offset: 0.18em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--tertiary);
+  outline-offset: 3px;
+}
+
+.d-header {
+  background: var(--header_background);
+  color: var(--header_primary);
+  box-shadow: var(--t-SanForum2027FachjournalPreview-shadow-raised);
+
+  #site-logo {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+
+    &.logo-small {
+      height: 32px;
+      width: auto;
+    }
+  }
+
+  .d-header-icons .icon,
+  .header-sidebar-toggle button {
+    color: var(--header_primary);
+
+    .d-icon {
+      color: inherit;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--header_primary);
+      background: var(
+        --t-SanForum2027FachjournalPreview-header-color-background-hover
+      );
+    }
+  }
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link {
+  border-radius: 4px;
+}
+
+.btn {
+  min-height: 2.5rem;
+  font-weight: 600;
+}
+
+.btn.btn-primary {
+  background: var(--t-SanForum2027FachjournalPreview-button-color-background);
+  color: var(--t-SanForum2027FachjournalPreview-button-color-text);
+
+  .d-icon {
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: var(
+      --t-SanForum2027FachjournalPreview-button-color-background-hover
+    );
+    color: var(--t-SanForum2027FachjournalPreview-button-color-text);
+  }
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+.select-kit.single-select .select-kit-header {
+  border-radius: var(--d-input-border-radius);
+}
+
+.navigation-container {
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-pills > li > a {
+  padding: 0.55em 0.85em;
+  font-weight: 600;
+
+  &.active {
+    background: var(--tertiary-very-low);
+    color: var(--t-SanForum2027FachjournalPreview-color-text-accent);
+  }
+}
+
+@include viewport.until(md) {
+  .d-header #site-logo {
+    max-width: min(46vw, 210px);
+    max-height: 34px;
+  }
+}

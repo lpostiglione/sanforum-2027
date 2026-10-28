@@ -1,3 +1,9 @@
 en:
   theme_metadata:
-    description: "The forkable base theme for the Canvas theme template."
+    description: "SanForum's Fachjournal theme for Discourse."
+  home:
+    navigation: "Browse the forum"
+    categories: "Categories"
+    discussions: "Recent discussions"
+    all_categories: "All categories"
+    all_discussions: "All discussions"

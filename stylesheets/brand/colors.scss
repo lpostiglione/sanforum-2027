@@ -1,0 +1,38 @@
+:root {
+  --t-SanForum2027FachjournalPreview-color-border: color-mix(
+    in srgb,
+    var(--primary) 15%,
+    var(--secondary)
+  );
+  --t-SanForum2027FachjournalPreview-color-text-muted: color-mix(
+    in srgb,
+    var(--primary) 72%,
+    var(--secondary)
+  );
+  --t-SanForum2027FachjournalPreview-color-text-accent: light-dark(
+    color-mix(in srgb, var(--tertiary) 82%, var(--primary)),
+    color-mix(in srgb, var(--tertiary) 55%, var(--primary))
+  );
+  --t-SanForum2027FachjournalPreview-button-color-background-accent: light-dark(
+    var(--tertiary),
+    var(--quaternary)
+  );
+  --t-SanForum2027FachjournalPreview-button-color-background: color-mix(
+    in srgb,
+    var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 90%,
+    #000
+  );
+  --t-SanForum2027FachjournalPreview-button-color-background-hover: color-mix(
+    in srgb,
+    var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 80%,
+    #000
+  );
+  --t-SanForum2027FachjournalPreview-sidebar-color-background: light-dark(
+    var(--secondary),
+    #142638
+  );
+  --t-SanForum2027FachjournalPreview-header-color-background-hover: rgb(
+    255 255 255 / 12%
+  );
+  --t-SanForum2027FachjournalPreview-button-color-text: #fff;
+}

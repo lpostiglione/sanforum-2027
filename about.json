@@ -1,42 +1,49 @@
 {
-  "name": "Canvas Theme",
-  "authors": "Manuel Kostka",
-  "about_url": "https://meta.discourse.org/t/canvas-theme-template/352730",
+  "name": "SanForum 2027 — Fachjournal Preview",
+  "authors": "SanForum.at; Canvas template by Manuel Kostka",
+  "about_url": "https://github.com/lpostiglione/sanforum-2027",
   "license_url": "https://gitlab.com/manuelkostka/discourse/canvas/theme/-/blob/main/LICENSE",
   "learn_more": "",
-  "theme_version": "0.0.1",
-  "minimum_discourse_version": "3.5.0",
+  "theme_version": "0.1.0",
+  "minimum_discourse_version": "2026.9.0-latest",
   "maximum_discourse_version": null,
-  "assets": {},
-  "modifiers": {},
+  "assets": {
+    "source-sans-3-latin": "assets/fonts/source-sans-3-latin-wght-normal.woff2",
+    "source-sans-3-latin-ext": "assets/fonts/source-sans-3-latin-ext-wght-normal.woff2",
+    "source-sans-3-latin-italic": "assets/fonts/source-sans-3-latin-wght-italic.woff2",
+    "source-sans-3-latin-ext-italic": "assets/fonts/source-sans-3-latin-ext-wght-italic.woff2"
+  },
+  "modifiers": {
+    "custom_homepage": true,
+    "serialize_topic_excerpts": true
+  },
+  "theme_site_settings": {
+    "enable_welcome_banner": false,
+    "search_experience": "search_icon"
+  },
   "color_schemes": {
-    "Canvas Light": {
-      "primary": "222222",
-      "secondary": "ffffff",
-      "tertiary": "0088cc",
-      "quaternary": "e45735",
-      "header_background": "ffffff",
-      "header_primary": "333333",
-      "highlight": "ffff4d",
-      "selected": "d1f0ff",
-      "hover": "f2f2f2"
+    "SanForum Fachjournal Light": {
+      "primary": "172B43",
+      "secondary": "FFFFFF",
+      "tertiary": "3877E5",
+      "quaternary": "1F7BC1",
+      "header_background": "103858",
+      "header_primary": "FFFFFF",
+      "highlight": "FFF2C2",
+      "selected": "E8F0FD",
+      "hover": "F3F7FC"
     },
-    "Canvas Dark": {
-      "primary": "dddddd",
-      "secondary": "222222",
-      "tertiary": "099dd7",
-      "quaternary": "c14924",
-      "header_background": "111111",
-      "header_primary": "dddddd",
-      "highlight": "a87137",
-      "selected": "052e3d",
-      "hover": "313131"
+    "SanForum Fachjournal Dark": {
+      "primary": "EDF3FA",
+      "secondary": "111A24",
+      "tertiary": "1F7BC1",
+      "quaternary": "3877E5",
+      "header_background": "103858",
+      "header_primary": "FFFFFF",
+      "highlight": "4A4030",
+      "selected": "173E67",
+      "hover": "1A2C40"
     }
   },
-  "components": [
-    "https://gitlab.com/manuelkostka/discourse/canvas/component.git",
-    "https://gitlab.com/manuelkostka/discourse/components/extra-banners.git",
-    "https://github.com/discourse/discourse-category-banners.git",
-    "https://github.com/discourse/discourse-tag-banners.git"
-  ]
+  "components": []
 }
