@@ -1,0 +1,6 @@
+# Written by Impeccable: local runtime state, never committed.
+state.json
+# Disposable inspection crops and font comparison output.
+map-inspections/
+font-match/
+comp-grid.png

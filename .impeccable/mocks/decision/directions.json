@@ -1,0 +1,248 @@
+{
+  "title": "SanForum · choose the theme direction",
+  "question": "Compare the mobile forum concepts. Each preserves the logo and blue accents, gives categories and recent discussions equal prominence, and extends to topics, search, composer and profiles. Select a direction or steer the next round.",
+  "options": [
+    {
+      "id": "kursplan",
+      "kind": "assigned",
+      "label": "Kursplan",
+      "thesis": "A precise, compact rhythm makes categories and live discussion equally easy to scan.",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#F4F7FA",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Crisp digital surfaces",
+        "Existing SanForum logo"
+      ],
+      "viewport": "Mobile Discourse header, equal category and discussion headings, a short category index and topic rows with a shared activity column.",
+      "risk": "Can feel too dense if spacing and wrapping are not carefully tuned.",
+      "kicker": "THE ROLL",
+      "lineage": "Continuing-education course programmes",
+      "comp": ".impeccable/mocks/decision/kursplan.png",
+      "raised": [
+        {
+          "from": "Emission rail",
+          "raise": "Unread and selected states remain understandable without colour alone."
+        },
+        {
+          "from": "Ticket wallet",
+          "raise": "Metadata follows a stable hierarchy across overview, search and profile activity."
+        },
+        {
+          "from": "Orienteering map",
+          "raise": "Location and return paths stay visible while moving between category and discussion."
+        },
+        {
+          "from": "Garden guide",
+          "raise": "Categories and discussions each get a clearly bounded work area."
+        },
+        {
+          "from": "Crouwel grid",
+          "raise": "One alignment system governs every screen, including dense and quiet states."
+        }
+      ]
+    },
+    {
+      "id": "fachjournal",
+      "kind": "pick",
+      "label": "Fachjournal",
+      "thesis": "Clear reading hierarchy gives the community’s conversations room without turning the forum into a magazine.",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#F4F7FA",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Crisp digital surfaces",
+        "Existing SanForum logo"
+      ],
+      "viewport": "Mobile forum header, equally prominent category browsing and recent activity, readable topic titles with restrained summaries and metadata.",
+      "risk": "The most familiar direction; distinction depends on excellent typography and restraint.",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Professional journals and their correspondence sections",
+      "comp": ".impeccable/mocks/decision/fachjournal.png"
+    },
+    {
+      "id": "wissensregister",
+      "kind": "challenger",
+      "label": "Wissensregister",
+      "thesis": "A strong blue section marker makes every discussion feel located within a shared body of knowledge.",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#F4F7FA",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Crisp digital surfaces",
+        "Existing SanForum logo"
+      ],
+      "viewport": "Standard mobile Discourse navigation, a category index and topic list; a single offset blue tab marks the active section.",
+      "risk": "The tab motif must remain a quiet orientation aid, never turn into a simulated book.",
+      "catalogId": "rw-manual-acetate-tab-board",
+      "verdict": "competitive",
+      "lineage": "Tabbed reference manuals, translated to a working forum",
+      "case": "Audience identification: strong training/reference association. Product clarity: comparable to Kursplan, with more emphasis on orientation.",
+      "comp": ".impeccable/mocks/decision/wissensregister.png",
+      "board": ".impeccable/references/manual-board.webp",
+      "hero": ".impeccable/references/manual-hero.webp"
+    },
+    {
+      "id": "emission",
+      "kind": "challenger",
+      "label": "Emission rail",
+      "thesis": "Topic state expressed through line weight beside a stable reading rail.",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#F4F7FA",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Crisp digital surfaces",
+        "Existing SanForum logo"
+      ],
+      "viewport": "A conventional forum list with precise state markers.",
+      "risk": "Hairline detail and uniform type would weaken mobile scanning.",
+      "catalogId": "operate-c-emission-line-rail",
+      "verdict": "declined",
+      "case": "Audience identification: weaker than Kursplan. Product clarity: weaker at phone scale.",
+      "kept": "State must remain clear without colour.",
+      "hero": "https://impeccable.style/worlds/cards/operate-c-emission-line-rail-hero.webp"
+    },
+    {
+      "id": "ticket",
+      "kind": "challenger",
+      "label": "Ticket wallet",
+      "thesis": "Each conversation has a compact, consistent metadata block.",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#F4F7FA",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Crisp digital surfaces",
+        "Existing SanForum logo"
+      ],
+      "viewport": "Standard forum navigation and stacked topic rows with aligned metadata.",
+      "risk": "Travel-ticket cues add an unrelated association.",
+      "catalogId": "vernacular-ephemera-jet-age-ticket-wallet",
+      "verdict": "declined",
+      "case": "Audience identification: weaker than Kursplan. Product clarity: boxed metadata overcomplicates long titles.",
+      "kept": "Stable metadata hierarchy.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-jet-age-ticket-wallet-hero.webp"
+    },
+    {
+      "id": "orienteering",
+      "kind": "challenger",
+      "label": "Orienteering map",
+      "thesis": "Strong location cues keep categories and conversations connected.",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#F4F7FA",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Crisp digital surfaces",
+        "Existing SanForum logo"
+      ],
+      "viewport": "Standard topic lists with visible category and return context.",
+      "risk": "A map metaphor would obscure ordinary forum navigation.",
+      "catalogId": "notation-diagram-systems-orienteering-map",
+      "verdict": "declined",
+      "case": "Audience identification: relevant to only part of the community. Product clarity: weaker than the direct course rhythm.",
+      "kept": "Clear location and return paths.",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-orienteering-map-hero.webp"
+    },
+    {
+      "id": "garden",
+      "kind": "challenger",
+      "label": "Garden guide",
+      "thesis": "Distinct work areas separate category browsing from recent activity.",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#F4F7FA",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Crisp digital surfaces",
+        "Existing SanForum logo"
+      ],
+      "viewport": "Conventional forum work areas with a bolder boundary treatment.",
+      "risk": "Organic shapes compete with dense text.",
+      "catalogId": "aww2-zoo-gardens-guide-map",
+      "verdict": "declined",
+      "case": "Audience identification: weak. Product clarity: weaker than Kursplan for text-heavy discussions.",
+      "kept": "Clear boundaries between jobs.",
+      "hero": "https://impeccable.style/worlds/cards/aww2-zoo-gardens-guide-map-hero.webp"
+    },
+    {
+      "id": "grid",
+      "kind": "challenger",
+      "label": "Crouwel grid",
+      "thesis": "Consistent alignment brings discipline to the full theme.",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#F4F7FA",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Crisp digital surfaces",
+        "Existing SanForum logo"
+      ],
+      "viewport": "A standard category index and discussion list on a precise grid.",
+      "risk": "Visible construction grids and oversized type would crowd the content.",
+      "catalogId": "crouwel-grid-specimen",
+      "verdict": "declined",
+      "case": "Audience identification: weak. Product clarity: weaker if the grid becomes the subject.",
+      "kept": "A shared alignment system across every screen.",
+      "hero": "https://impeccable.style/worlds/cards/crouwel-grid-specimen-hero.webp"
+    }
+  ],
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "steer": true,
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Familiar Discourse",
+    "thesis": "The familiar Discourse layout, carefully tuned for SanForum.",
+    "palette": [
+      "#3877E5",
+      "#1F7BC1",
+      "#18334D",
+      "#F4F7FA",
+      "#FFFFFF"
+    ],
+    "materials": [
+      "Clean native forum surfaces"
+    ],
+    "viewport": "Standard mobile forum header, categories and recent topics with equal access and conventional rows.",
+    "risk": "The least distinctive choice; recognition rests mainly on the existing logo and blue.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  }
+}

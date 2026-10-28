@@ -1,0 +1,9 @@
+de:
+  theme_metadata:
+    description: "Das Fachjournal-Theme von SanForum für Discourse."
+  home:
+    navigation: "Forum erkunden"
+    categories: "Kategorien"
+    discussions: "Aktuelle Diskussionen"
+    all_categories: "Alle Kategorien"
+    all_discussions: "Alle Diskussionen"

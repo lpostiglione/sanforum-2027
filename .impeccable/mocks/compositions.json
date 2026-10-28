@@ -1,0 +1,61 @@
+{
+  "title": "SanForum · final homepage composition",
+  "question": "The Fachjournal direction is settled. Choose the homepage composition to implement, or add a correction. All names, excerpts, avatars and counts shown here are illustrative; the theme will use actual Discourse data and your original logo. Desktop and dark mode will adapt the selected structure.",
+  "options": [
+    {
+      "id": "balanced",
+      "label": "Balanced overview — chosen direction",
+      "thesis": "A readable category directory followed by recent conversations.",
+      "risk": "Long category descriptions can push discussion farther down.",
+      "comp": ".impeccable/mocks/decision/fachjournal.png",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Fachjournal",
+        "Real Discourse controls"
+      ],
+      "viewport": "A readable category directory followed by recent conversations."
+    },
+    {
+      "id": "activity",
+      "label": "Compact category finder",
+      "thesis": "A shallow category finder leaves more space for recent conversations.",
+      "risk": "Less category context is visible before opening a category.",
+      "comp": ".impeccable/mocks/fachjournal-activity.png",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Fachjournal",
+        "Real Discourse controls"
+      ],
+      "viewport": "A shallow category finder leaves more space for recent conversations."
+    },
+    {
+      "id": "grouped",
+      "label": "Conversations within categories",
+      "thesis": "Category sections each carry their latest discussion previews.",
+      "risk": "Activity is distributed across sections rather than one chronological list.",
+      "comp": ".impeccable/mocks/fachjournal-grouped.png",
+      "palette": [
+        "#3877E5",
+        "#1F7BC1",
+        "#18334D",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "Fachjournal",
+        "Real Discourse controls"
+      ],
+      "viewport": "Category sections each carry their latest discussion previews."
+    }
+  ],
+  "steer": true
+}

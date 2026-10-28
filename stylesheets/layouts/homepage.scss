@@ -1,0 +1,172 @@
+.sanforum-home {
+  container-type: inline-size;
+  container-name: sanforum-home;
+  .navigation-container {
+    margin-bottom: 0.5rem;
+  }
+
+  #whos-online {
+    margin: 0 0 1rem;
+    padding: 0;
+    color: var(--t-SanForum2027FachjournalPreview-color-text-muted);
+    font-size: 0.875rem;
+  }
+}
+
+.sanforum-home-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--t-SanForum2027FachjournalPreview-color-border);
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    min-height: 3rem;
+    padding: 0.6em;
+    box-sizing: border-box;
+    color: var(--t-SanForum2027FachjournalPreview-color-text-accent);
+    font-size: 1.1rem;
+    font-weight: 650;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--tertiary-very-low);
+    }
+  }
+}
+
+.sanforum-home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.5rem;
+
+  > section {
+    min-width: 0;
+    scroll-margin-top: 6rem;
+  }
+}
+
+.sanforum-section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  padding: 0;
+
+  h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  a {
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}
+
+.sanforum-home #list-area .sanforum-section-heading h2 {
+  margin: 0;
+}
+
+.sanforum-categories .category-list {
+  th.category,
+  td.category {
+    width: calc(100% - 4.5rem);
+  }
+
+  th.topics,
+  td.topics {
+    width: 4.5rem;
+    padding-inline: 0;
+  }
+}
+
+.sanforum-categories .category-list-header {
+  /* Keep the native heading and table labels available to screen readers.*/
+  clip-path: inset(50%);
+  th {
+    height: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+}
+
+.sanforum-discussions .latest-topic-list .table-heading {
+  display: none;
+}
+
+@include container.from(md, sanforum-home) {
+  .sanforum-home-nav {
+    display: none;
+  }
+
+  .sanforum-home-grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 2rem;
+  }
+}
+
+@include viewport.until(md) {
+  .sanforum-home-nav {
+    margin-bottom: 0.75rem;
+  }
+
+  .sanforum-home .navigation-container {
+    margin-bottom: 0.75rem;
+  }
+
+  .sanforum-home-grid {
+    gap: 1.25rem;
+  }
+
+  .sanforum-section-heading {
+    gap: 0.5rem;
+
+    h2 {
+      font-size: 1.35rem;
+    }
+  }
+
+  /* The overview stays compact; native category pages retain the full directory.*/
+
+  .sanforum-categories > .category-list {
+    margin-bottom: 0;
+  }
+
+  .sanforum-categories > .category-list > .category-list-item {
+    padding-block: 0;
+
+    .main-link h3 {
+      margin-bottom: 0;
+    }
+
+    .category-description,
+    .subcategories-list,
+    .subcategory-list-item,
+    .category-topics-count {
+      display: none;
+    }
+
+    .category-title-link {
+      display: flex;
+      align-items: center;
+      min-height: 3rem;
+      padding-block: 0.35rem;
+      box-sizing: border-box;
+    }
+
+    .category-title-link .badge-category__name {
+      font-size: 1.0625rem;
+    }
+  }
+}

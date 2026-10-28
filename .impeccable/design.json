@@ -1,0 +1,484 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T23:05:46+00:00",
+  "title": "Design System: SanForum Fachjournal",
+  "extensions": {
+    "colorMeta": {
+      "ink-light": {
+        "role": "neutral",
+        "displayName": "Ink, light scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0155 253.9)",
+          "oklch(0.26 0.0335 253.9)",
+          "oklch(0.38 0.0464 253.9)",
+          "oklch(0.50 0.0515 253.9)",
+          "oklch(0.62 0.0515 253.9)",
+          "oklch(0.74 0.0412 253.9)",
+          "oklch(0.86 0.0232 253.9)",
+          "oklch(0.95 0.0077 253.9)"
+        ]
+      },
+      "paper-light": {
+        "role": "neutral",
+        "displayName": "Paper, light scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0000 89.9)",
+          "oklch(0.26 0.0000 89.9)",
+          "oklch(0.38 0.0000 89.9)",
+          "oklch(0.50 0.0000 89.9)",
+          "oklch(0.62 0.0000 89.9)",
+          "oklch(0.74 0.0000 89.9)",
+          "oklch(0.86 0.0000 89.9)",
+          "oklch(0.95 0.0000 89.9)"
+        ]
+      },
+      "brand-blue-light": {
+        "role": "primary",
+        "displayName": "SanForum Blue, light scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0538 260.7)",
+          "oklch(0.26 0.1166 260.7)",
+          "oklch(0.38 0.1615 260.7)",
+          "oklch(0.50 0.1795 260.7)",
+          "oklch(0.62 0.1795 260.7)",
+          "oklch(0.74 0.1436 260.7)",
+          "oklch(0.86 0.0808 260.7)",
+          "oklch(0.95 0.0269 260.7)"
+        ]
+      },
+      "brand-blue-dark": {
+        "role": "primary",
+        "displayName": "SanForum Blue, dark scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0407 247.1)",
+          "oklch(0.26 0.0882 247.1)",
+          "oklch(0.38 0.1221 247.1)",
+          "oklch(0.50 0.1357 247.1)",
+          "oklch(0.62 0.1357 247.1)",
+          "oklch(0.74 0.1086 247.1)",
+          "oklch(0.86 0.0611 247.1)",
+          "oklch(0.95 0.0204 247.1)"
+        ]
+      },
+      "header-light": {
+        "role": "primary",
+        "displayName": "Identity Navy, light scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0215 246.7)",
+          "oklch(0.26 0.0466 246.7)",
+          "oklch(0.38 0.0646 246.7)",
+          "oklch(0.50 0.0717 246.7)",
+          "oklch(0.62 0.0717 246.7)",
+          "oklch(0.74 0.0574 246.7)",
+          "oklch(0.86 0.0323 246.7)",
+          "oklch(0.95 0.0108 246.7)"
+        ]
+      },
+      "header-dark": {
+        "role": "primary",
+        "displayName": "Identity Navy, dark scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0215 246.7)",
+          "oklch(0.26 0.0466 246.7)",
+          "oklch(0.38 0.0646 246.7)",
+          "oklch(0.50 0.0717 246.7)",
+          "oklch(0.62 0.0717 246.7)",
+          "oklch(0.74 0.0574 246.7)",
+          "oklch(0.86 0.0323 246.7)",
+          "oklch(0.95 0.0108 246.7)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink, dark scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0034 252.1)",
+          "oklch(0.26 0.0074 252.1)",
+          "oklch(0.38 0.0102 252.1)",
+          "oklch(0.50 0.0114 252.1)",
+          "oklch(0.62 0.0114 252.1)",
+          "oklch(0.74 0.0091 252.1)",
+          "oklch(0.86 0.0051 252.1)",
+          "oklch(0.95 0.0017 252.1)"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Paper, dark scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0072 251.6)",
+          "oklch(0.26 0.0155 251.6)",
+          "oklch(0.38 0.0215 251.6)",
+          "oklch(0.50 0.0239 251.6)",
+          "oklch(0.62 0.0239 251.6)",
+          "oklch(0.74 0.0191 251.6)",
+          "oklch(0.86 0.0107 251.6)",
+          "oklch(0.95 0.0036 251.6)"
+        ]
+      },
+      "sidebar-dark": {
+        "role": "neutral",
+        "displayName": "Dark Sidebar",
+        "tonalRamp": [
+          "oklch(0.15 0.0125 249.7)",
+          "oklch(0.26 0.0270 249.7)",
+          "oklch(0.38 0.0374 249.7)",
+          "oklch(0.50 0.0416 249.7)",
+          "oklch(0.62 0.0416 249.7)",
+          "oklch(0.74 0.0333 249.7)",
+          "oklch(0.86 0.0187 249.7)",
+          "oklch(0.95 0.0062 249.7)"
+        ]
+      },
+      "selected-light": {
+        "role": "neutral",
+        "displayName": "Selection, light scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0058 260.2)",
+          "oklch(0.26 0.0127 260.2)",
+          "oklch(0.38 0.0175 260.2)",
+          "oklch(0.50 0.0195 260.2)",
+          "oklch(0.62 0.0195 260.2)",
+          "oklch(0.74 0.0156 260.2)",
+          "oklch(0.86 0.0088 260.2)",
+          "oklch(0.95 0.0029 260.2)"
+        ]
+      },
+      "selected-dark": {
+        "role": "neutral",
+        "displayName": "Selection, dark scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0251 252.2)",
+          "oklch(0.26 0.0544 252.2)",
+          "oklch(0.38 0.0753 252.2)",
+          "oklch(0.50 0.0837 252.2)",
+          "oklch(0.62 0.0837 252.2)",
+          "oklch(0.74 0.0670 252.2)",
+          "oklch(0.86 0.0377 252.2)",
+          "oklch(0.95 0.0126 252.2)"
+        ]
+      },
+      "hover-light": {
+        "role": "neutral",
+        "displayName": "Hover, light scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0024 253.9)",
+          "oklch(0.26 0.0052 253.9)",
+          "oklch(0.38 0.0071 253.9)",
+          "oklch(0.50 0.0079 253.9)",
+          "oklch(0.62 0.0079 253.9)",
+          "oklch(0.74 0.0063 253.9)",
+          "oklch(0.86 0.0036 253.9)",
+          "oklch(0.95 0.0012 253.9)"
+        ]
+      },
+      "hover-dark": {
+        "role": "neutral",
+        "displayName": "Hover, dark scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0132 252.0)",
+          "oklch(0.26 0.0286 252.0)",
+          "oklch(0.38 0.0396 252.0)",
+          "oklch(0.50 0.0440 252.0)",
+          "oklch(0.62 0.0440 252.0)",
+          "oklch(0.74 0.0352 252.0)",
+          "oklch(0.86 0.0198 252.0)",
+          "oklch(0.95 0.0066 252.0)"
+        ]
+      },
+      "highlight-light": {
+        "role": "neutral",
+        "displayName": "Highlight, light scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0190 94.7)",
+          "oklch(0.26 0.0412 94.7)",
+          "oklch(0.38 0.0570 94.7)",
+          "oklch(0.50 0.0633 94.7)",
+          "oklch(0.62 0.0633 94.7)",
+          "oklch(0.74 0.0507 94.7)",
+          "oklch(0.86 0.0285 94.7)",
+          "oklch(0.95 0.0095 94.7)"
+        ]
+      },
+      "highlight-dark": {
+        "role": "neutral",
+        "displayName": "Highlight, dark scheme",
+        "tonalRamp": [
+          "oklch(0.15 0.0088 79.3)",
+          "oklch(0.26 0.0190 79.3)",
+          "oklch(0.38 0.0263 79.3)",
+          "oklch(0.50 0.0293 79.3)",
+          "oklch(0.62 0.0293 79.3)",
+          "oklch(0.74 0.0234 79.3)",
+          "oklch(0.86 0.0132 79.3)",
+          "oklch(0.95 0.0044 79.3)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Surface Rule",
+        "tonalRamp": [
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-border) 0.15 calc(c * 0.3) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-border) 0.26 calc(c * 0.65) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-border) 0.38 calc(c * 0.9) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-border) 0.50 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-border) 0.62 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-border) 0.74 calc(c * 0.8) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-border) 0.86 calc(c * 0.45) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-border) 0.95 calc(c * 0.15) h)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Supporting Text",
+        "tonalRamp": [
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-muted) 0.15 calc(c * 0.3) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-muted) 0.26 calc(c * 0.65) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-muted) 0.38 calc(c * 0.9) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-muted) 0.50 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-muted) 0.62 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-muted) 0.74 calc(c * 0.8) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-muted) 0.86 calc(c * 0.45) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-muted) 0.95 calc(c * 0.15) h)"
+        ]
+      },
+      "link": {
+        "role": "primary",
+        "displayName": "Reading Link",
+        "tonalRamp": [
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-accent) 0.15 calc(c * 0.3) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-accent) 0.26 calc(c * 0.65) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-accent) 0.38 calc(c * 0.9) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-accent) 0.50 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-accent) 0.62 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-accent) 0.74 calc(c * 0.8) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-accent) 0.86 calc(c * 0.45) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-color-text-accent) 0.95 calc(c * 0.15) h)"
+        ]
+      },
+      "action-accent": {
+        "role": "primary",
+        "displayName": "Action Accent",
+        "tonalRamp": [
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 0.15 calc(c * 0.3) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 0.26 calc(c * 0.65) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 0.38 calc(c * 0.9) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 0.50 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 0.62 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 0.74 calc(c * 0.8) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 0.86 calc(c * 0.45) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-accent) 0.95 calc(c * 0.15) h)"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "tonalRamp": [
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background) 0.15 calc(c * 0.3) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background) 0.26 calc(c * 0.65) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background) 0.38 calc(c * 0.9) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background) 0.50 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background) 0.62 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background) 0.74 calc(c * 0.8) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background) 0.86 calc(c * 0.45) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background) 0.95 calc(c * 0.15) h)"
+        ]
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "Action Blue, hover",
+        "tonalRamp": [
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-hover) 0.15 calc(c * 0.3) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-hover) 0.26 calc(c * 0.65) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-hover) 0.38 calc(c * 0.9) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-hover) 0.50 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-hover) 0.62 calc(c * 1) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-hover) 0.74 calc(c * 0.8) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-hover) 0.86 calc(c * 0.45) h)",
+          "oklch(from var(--t-SanForum2027FachjournalPreview-button-color-background-hover) 0.95 calc(c * 0.15) h)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Topic Headline",
+        "purpose": "Fluid topic titles with a 38ch measure."
+      },
+      "section": {
+        "displayName": "Section Heading",
+        "purpose": "24px overview section headings at a 16px root; 1.35rem on narrow screens."
+      },
+      "title": {
+        "displayName": "Discussion Title",
+        "purpose": "19px overview discussion titles at a 16px root; weight 700, or 600 for visited titles without dimming their color."
+      },
+      "reading": {
+        "displayName": "Post Reading",
+        "purpose": "Post content at 72ch maximum; 1rem on narrow screens."
+      },
+      "body": {
+        "displayName": "Descriptions and Excerpts",
+        "purpose": "Category descriptions and overview excerpts."
+      },
+      "label": {
+        "displayName": "Section Link",
+        "purpose": "Compact links beside overview section headings."
+      },
+      "category-link": {
+        "displayName": "Mobile Overview Category",
+        "purpose": "17px strong wrapping parent-category titles at a 16px root in the main mobile homepage list."
+      },
+      "category-title": {
+        "displayName": "Category Title",
+        "purpose": "18px wrapping category titles at a 16px root, scoped to category lists."
+      },
+      "subcategory": {
+        "displayName": "Subcategory",
+        "purpose": "15px wrapping subcategory links at a 16px root in an auto-fit grid."
+      },
+      "metadata": {
+        "displayName": "Identity and Metadata",
+        "purpose": "14px last-poster identity, dates and online status at a 16px root."
+      },
+      "count": {
+        "displayName": "Overview Post Count",
+        "purpose": "18px post totals at a 16px root in the overview statistics column."
+      }
+    },
+    "shadows": [
+      {
+        "name": "identity-header",
+        "value": "0 2px 7px rgb(0 0 0 / 12%)",
+        "purpose": "Separates the navy identity bar from the flat reading surface."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "viewport-md",
+        "value": "48rem"
+      },
+      {
+        "name": "sanforum-home-container-md",
+        "value": "48rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Theme-owned primary-action styling; native Discourse owns padding and disabled behavior.",
+      "html": "<button class=\"ds-primary\">Neues Thema</button>",
+      "css": ".ds-primary {font-family:var(--font-family,\"Source Sans 3\",sans-serif);min-height:2.5rem;font-weight:600;border:0;border-radius:var(--d-button-border-radius,6px);background:var(--t-SanForum2027FachjournalPreview-button-color-background,color-mix(in srgb,var(--t-SanForum2027FachjournalPreview-button-color-background-accent,light-dark(var(--tertiary,#3877E5),var(--quaternary,#3877E5))) 90%,#000));color:var(--t-SanForum2027FachjournalPreview-button-color-text,#fff);} .ds-primary:hover,.ds-primary:focus-visible {background:var(--t-SanForum2027FachjournalPreview-button-color-background-hover,color-mix(in srgb,var(--t-SanForum2027FachjournalPreview-button-color-background-accent,light-dark(var(--tertiary,#3877E5),var(--quaternary,#3877E5))) 80%,#000));color:var(--t-SanForum2027FachjournalPreview-button-color-text,#fff);} .ds-primary:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;}"
+    },
+    {
+      "name": "Composer Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Native editor field styling with the shared radius and reading rhythm; validation and drafts remain native.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-message\">Beitrag</label><textarea id=\"ds-message\" class=\"ds-field\" rows=\"3\" placeholder=\"Deinen Beitrag schreiben\"></textarea>",
+      "css": ".ds-field-label {font-family:var(--font-family,\"Source Sans 3\",sans-serif);display:block;color:var(--primary,#172B43);} .ds-field {font-family:var(--font-family,\"Source Sans 3\",sans-serif);font-size:1rem;line-height:1.6;border:1px solid var(--primary-low-mid,#9aa7b4);border-radius:var(--d-input-border-radius,6px);background:var(--secondary,#fff);color:var(--primary,#172B43);caret-color:var(--tertiary,#3877E5);} .ds-field::placeholder {color:var(--t-SanForum2027FachjournalPreview-color-text-muted,color-mix(in srgb,var(--primary,#172B43) 72%,var(--secondary,#fff)));opacity:1;} .ds-field:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;}"
+    },
+    {
+      "name": "Discovery Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-link",
+      "description": "Native discovery navigation stays at every width; its homepage container uses a 0.5rem bottom margin at viewport md (48rem) and above, and 0.75rem below it.",
+      "html": "<nav class=\"ds-discovery\" aria-label=\"Themen filtern\"><a href=\"#aktuell\" aria-current=\"page\">Aktuell</a><a href=\"#ungelesen\">Ungelesen</a></nav>",
+      "css": ".ds-discovery {font-family:var(--font-family,\"Source Sans 3\",sans-serif);display:flex;gap:.6rem;} .ds-discovery a {display:block;padding:.55em .85em;border-radius:var(--d-nav-pill-border-radius,4px);font-weight:600;color:var(--t-SanForum2027FachjournalPreview-color-text-accent,light-dark(color-mix(in srgb,var(--tertiary,#3877E5) 82%,var(--primary,#172B43)),color-mix(in srgb,var(--tertiary,#1F7BC1) 55%,var(--primary,#EDF3FA))));text-decoration:none;} .ds-discovery a[aria-current=\"page\"] {background:var(--tertiary-very-low,#E8F0FD);color:var(--t-SanForum2027FachjournalPreview-color-text-accent,light-dark(color-mix(in srgb,var(--tertiary,#3877E5) 82%,var(--primary,#172B43)),color-mix(in srgb,var(--tertiary,#1F7BC1) 55%,var(--primary,#EDF3FA))));} .ds-discovery a:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;}"
+    },
+    {
+      "name": "Overview Destinations",
+      "kind": "nav",
+      "refersTo": "overview-destination",
+      "description": "Two equal jump links while the named homepage container is narrower than md (48rem); the native latest-filter label follows the active locale. Hidden when that container gains adjacent columns.",
+      "html": "<div class=\"ds-home\"><nav class=\"ds-destinations\" aria-label=\"Forum erkunden\"><a href=\"#kategorien\">Kategorien</a><a href=\"#diskussionen\">Aktuell</a></nav></div>",
+      "css": ".ds-home {container-type:inline-size;container-name:sanforum-home;} .ds-destinations {font-family:var(--font-family,\"Source Sans 3\",sans-serif);display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--t-SanForum2027FachjournalPreview-color-border,color-mix(in srgb,var(--primary,#172B43) 15%,var(--secondary,#fff)));margin-bottom:1.5rem;} .ds-destinations a {display:flex;align-items:center;justify-content:center;gap:.6em;min-height:3rem;padding:.6em;box-sizing:border-box;color:var(--t-SanForum2027FachjournalPreview-color-text-accent,light-dark(color-mix(in srgb,var(--tertiary,#3877E5) 82%,var(--primary,#172B43)),color-mix(in srgb,var(--tertiary,#1F7BC1) 55%,var(--primary,#EDF3FA))));font-size:1.1rem;font-weight:650;text-decoration:none;} .ds-destinations a:hover,.ds-destinations a:focus-visible {background:var(--tertiary-very-low,#E8F0FD);} .ds-destinations a:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;} @media(width < 48rem){.ds-destinations{margin-bottom:.75rem;}} @container sanforum-home (width >= 48rem){.ds-destinations{display:none;}}"
+    },
+    {
+      "name": "Category and Subcategory Directory",
+      "kind": "custom",
+      "refersTo": "category-title",
+      "description": "Category-list-scoped wrapping: 18px titles and an auto-fit 15px subcategory grid at a 16px root. The compact mobile homepage hides its subcategory tree separately; full category pages keep it.",
+      "html": "<div class=\"ds-directory\"><a class=\"ds-category-title\" href=\"#kategorie\">Rettungsdienst und Krankentransport</a><div class=\"ds-subcategories\"><a href=\"#ausbildung\">Ausbildung und Fortbildung</a><a href=\"#ausruestung\">Ausrüstung und Fahrzeuge</a></div></div>",
+      "css": ".ds-directory {font-family:var(--font-family,\"Source Sans 3\",sans-serif);min-width:0;max-width:100%;} .ds-directory a {white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;min-width:0;max-width:100%;text-decoration:none;} .ds-category-title {display:block;color:var(--primary,#172B43);font-size:1.125rem;font-weight:650;line-height:1.35;} .ds-subcategories {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr));gap:.45rem 1rem;margin-top:.8rem;line-height:1.4;} .ds-subcategories a {color:var(--t-SanForum2027FachjournalPreview-color-text-muted,color-mix(in srgb,var(--primary,#172B43) 72%,var(--secondary,#fff)));font-size:.9375rem;} .ds-directory a:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;}"
+    },
+    {
+      "name": "Mobile Overview Category",
+      "kind": "custom",
+      "refersTo": "overview-category",
+      "description": "Narrow-layout specimen for the homepage main list only: all permitted parent categories remain as 3rem-minimum title links. Full category pages and the expanded muted group retain details.",
+      "html": "<div class=\"ds-category-row\"><a class=\"ds-category-link\" href=\"#kategorie\"><span class=\"ds-category-name\">Rettungsdienst und Krankentransport</span></a></div>",
+      "css": ".ds-category-row {font-family:var(--font-family,\"Source Sans 3\",sans-serif);padding-block:0;border-bottom:1px solid var(--t-SanForum2027FachjournalPreview-color-border,color-mix(in srgb,var(--primary,#172B43) 15%,var(--secondary,#fff)));border-radius:0;} .ds-category-link {display:flex;align-items:center;min-height:3rem;padding-block:.35rem;box-sizing:border-box;color:var(--primary,#172B43);text-decoration:none;} .ds-category-name {width:100%;max-width:none;color:var(--primary,#172B43);font-size:1.0625rem;font-weight:650;line-height:1.35;white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;} .ds-category-link:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;}"
+    },
+    {
+      "name": "Discussion Row",
+      "kind": "custom",
+      "refersTo": "discussion-title",
+      "description": "Title-first overview row with excerpt/category, actual native last-poster identity below, and a separate statistics column. Text and avatar in this specimen are placeholders; the implementation uses lastPosterUser with native link/avatar/flair components. Native flair is inset 14px from the poster block start and inline start.",
+      "html": "<article class=\"ds-discussion\"><div class=\"ds-discussion-main\"><a class=\"ds-discussion-title\" href=\"#thema\">Erfahrungen aus dem Rettungsdienst austauschen</a><p class=\"ds-excerpt\">Eine Diskussion aus der Community. Titel und Auszüge stammen im Forum aus den tatsächlichen Beiträgen.</p><a class=\"ds-discussion-category\" href=\"#kategorie\">Rettungsdienst</a></div><div class=\"ds-poster\"><a href=\"#profil\"><svg class=\"ds-avatar\" aria-hidden=\"true\" width=\"28\" height=\"28\" viewBox=\"0 0 28 28\"><circle cx=\"14\" cy=\"14\" r=\"14\" fill=\"currentColor\" opacity=\".18\"/><circle cx=\"14\" cy=\"10\" r=\"4\" fill=\"currentColor\"/><path d=\"M6 24a8 8 0 0 1 16 0\" fill=\"currentColor\"/></svg><span>Mitglied</span></a></div><div class=\"ds-stats\"><span class=\"ds-date\">vor 2 Std.</span><span class=\"ds-count\">12</span></div></article>",
+      "css": ".ds-discussion {font-family:var(--font-family,\"Source Sans 3\",sans-serif);display:grid;align-items:start;grid-template-columns:minmax(0,1fr) 3.5rem;gap:.6rem .75rem;padding:1.15rem 0;border-bottom:1px solid var(--t-SanForum2027FachjournalPreview-color-border,color-mix(in srgb,var(--primary,#172B43) 15%,var(--secondary,#fff)));background:var(--secondary,#fff);} .ds-discussion-main {grid-column:1;grid-row:1;min-width:0;width:auto;max-width:none;padding:0;} .ds-discussion-title {color:var(--primary,#172B43);font-size:1.1875rem;font-weight:700;line-height:1.4;overflow-wrap:anywhere;text-decoration:none;} .ds-discussion.ds-visited .ds-discussion-title {color:var(--primary,#172B43);font-weight:600;} .ds-discussion a:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;} .ds-excerpt {display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-block:.45rem;color:var(--t-SanForum2027FachjournalPreview-color-text-muted,color-mix(in srgb,var(--primary,#172B43) 72%,var(--secondary,#fff)));font-size:1rem;line-height:1.5;} .ds-discussion-category {color:var(--t-SanForum2027FachjournalPreview-color-text-accent,light-dark(color-mix(in srgb,var(--tertiary,#3877E5) 82%,var(--primary,#172B43)),color-mix(in srgb,var(--tertiary,#1F7BC1) 55%,var(--primary,#EDF3FA))));min-width:0;max-width:100%;white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;} .ds-poster {grid-column:1;grid-row:2;position:relative;width:auto;} .ds-poster a {display:inline-flex;align-items:center;gap:.5rem;max-width:100%;color:var(--t-SanForum2027FachjournalPreview-color-text-muted,color-mix(in srgb,var(--primary,#172B43) 72%,var(--secondary,#fff)));font-size:.875rem;overflow-wrap:anywhere;text-decoration:none;} .ds-avatar {width:28px;height:28px;flex-shrink:0;} .ds-stats {grid-column:2;grid-row:1 / 3;display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:.7rem;width:auto;padding:0;text-align:right;font-variant-numeric:tabular-nums;} .ds-date {color:var(--t-SanForum2027FachjournalPreview-color-text-muted,color-mix(in srgb,var(--primary,#172B43) 72%,var(--secondary,#fff)));font-size:.875rem;} .ds-count {color:var(--primary,#172B43);font-size:1.125rem;font-weight:600;} @media(width < 48rem){.ds-discussion{padding-block:1rem;}}"
+    },
+    {
+      "name": "Overview Section Heading",
+      "kind": "custom",
+      "refersTo": "section-title",
+      "description": "A strong section title and compact native destination link share a baseline.",
+      "html": "<header class=\"ds-section\"><h2>Kategorien</h2><a href=\"#alle-kategorien\">Alle Kategorien</a></header>",
+      "css": ".ds-section {font-family:var(--font-family,\"Source Sans 3\",sans-serif);display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:.75rem;padding:0;} .ds-section h2 {margin:0;color:var(--primary,#172B43);font-size:1.5rem;line-height:1.25;font-weight:700;} .ds-section a {flex-shrink:0;color:var(--t-SanForum2027FachjournalPreview-color-text-accent,light-dark(color-mix(in srgb,var(--tertiary,#3877E5) 82%,var(--primary,#172B43)),color-mix(in srgb,var(--tertiary,#1F7BC1) 55%,var(--primary,#EDF3FA))));font-size:.9rem;font-weight:600;text-underline-offset:.18em;} .ds-section a:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;} @media(width < 48rem){.ds-section{gap:.5rem;}.ds-section h2{font-size:1.35rem;}}"
+    },
+    {
+      "name": "Reading Surface",
+      "kind": "custom",
+      "refersTo": "reading-body",
+      "description": "Post rhythm and readable measure; native mentions, attachments, quotes and oneboxes retain their behaviors.",
+      "html": "<div class=\"ds-reading\"><p>Erfahrungen werden verständlich, wenn Beiträge genug Raum zum Lesen haben. <a href=\"#weiterlesen\">Zur Diskussion</a></p><blockquote>Eine zitierte Passage bleibt Teil des Leseflusses.</blockquote></div>",
+      "css": ".ds-reading {font-family:var(--font-family,\"Source Sans 3\",sans-serif);max-width:var(--t-SanForum2027FachjournalPreview-reading-size-inline,72ch);font-size:1.0625rem;line-height:1.65;color:var(--primary,#172B43);background:var(--secondary,#fff);} .ds-reading p {margin-block:0 1.15em;} .ds-reading a {color:var(--t-SanForum2027FachjournalPreview-color-text-accent,light-dark(color-mix(in srgb,var(--tertiary,#3877E5) 82%,var(--primary,#172B43)),color-mix(in srgb,var(--tertiary,#1F7BC1) 55%,var(--primary,#EDF3FA))));text-decoration-thickness:1px;text-underline-offset:.18em;} .ds-reading a:focus-visible {outline:2px solid var(--tertiary,#3877E5);outline-offset:3px;} .ds-reading blockquote {border-inline-start:1px solid var(--t-SanForum2027FachjournalPreview-color-border,color-mix(in srgb,var(--primary,#172B43) 15%,var(--secondary,#fff)));background:var(--primary-very-low,#F3F7FC);} @media(width < 48rem){.ds-reading{font-size:1rem;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Das Fachjournal",
+    "overview": "SanForum combines the clarity of a specialist journal with the familiar behavior\nof a discussion forum. A deep navy identity bar holds the unchanged SanForum\nlogo. Blue provides navigation and action emphasis; neutral surfaces, continuous\nrows and quiet dividers give real discussions room to lead.\n\nThe system serves reading and participation. It adapts the approved Fachjournal\ndirection to native Discourse components, preserving their content, hierarchy,\npermissions and interaction states. The original logo and existing blue accents\nare binding identity assets; the generated comp is a composition reference.",
+    "keyCharacteristics": [
+      "One humanist sans for navigation, discussion titles and reading.",
+      "Continuous content rows separated by quiet rules.",
+      "The same visual hierarchy in light and dark palettes.",
+      "Mobile-first composition with native Discourse behavior."
+    ],
+    "rules": [
+      {
+        "name": "The Identity Rule",
+        "body": "Keep the supplied logo and both brand blues unchanged;\nderive functional contrast colors without editing those identity assets.",
+        "section": "colors"
+      },
+      {
+        "name": "The Readability Rule",
+        "body": "Visited discussion titles retain the active foreground\ncolor. Dates and secondary labels use the supporting-text token; overview post\ncounts use the active foreground. Reading history must not make a title difficult\nto read.",
+        "section": "typography"
+      },
+      {
+        "name": "The Continuous Reading Rule",
+        "body": "Keep category and discussion rows on their\nshared surface; do not turn each item into an elevated card.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the original SanForum logo, its aspect ratio and both brand blues.",
+      "**Do** use the active Discourse palette and the theme's derived link/action tokens.",
+      "**Do** retain native navigation, permissions, drafts, status badges and account behavior.",
+      "**Do** allow long German titles and real category hierarchies to determine row height.",
+      "**Do** keep keyboard focus visible and preserve native labels and semantics.",
+      "**Do** check future changes in a real Discourse instance in both color schemes and responsive layouts."
+    ],
+    "donts": [
+      "**Don't** copy illustrative comp content into the forum or use it as production data.",
+      "**Don't** stretch, recolor or crop the supplied logo.",
+      "**Don't** replace continuous reading rows with individually elevated cards.",
+      "**Don't** reduce visited titles or supporting counts to faint decorative text.",
+      "**Don't** truncate category or subcategory names with ellipses at any width.",
+      "**Don't** hide native controls or alter shared component settings to imitate the comp.",
+      "**Don't** treat this design-system record as proof of runtime coverage or final approval."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+:root {
+  --d-max-width: 1440px;
+  --d-sidebar-width: 15rem;
+  --d-sidebar-background: var(
+    --t-SanForum2027FachjournalPreview-sidebar-color-background
+  );
+  --d-sidebar-active-background: var(--d-selected);
+  --d-sidebar-highlight-background: var(--d-hover);
+  --d-sidebar-row-height: 2.5em;
+  --d-border-radius: 6px;
+  --d-border-radius-large: 10px;
+  --d-button-border-radius: 6px;
+  --d-input-border-radius: 6px;
+  --d-nav-pill-border-radius: 4px;
+  --t-SanForum2027FachjournalPreview-reading-size-inline: 72ch;
+  --t-SanForum2027FachjournalPreview-shadow-raised: 0 2px 7px rgb(0 0 0 / 12%);
+}

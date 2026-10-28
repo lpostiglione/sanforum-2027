@@ -1,0 +1,75 @@
+.search-menu .search-input,
+.search-container .search-header {
+  border-color: var(--t-SanForum2027FachjournalPreview-color-border);
+}
+
+.search-container .search-types__type.active {
+  color: var(--t-SanForum2027FachjournalPreview-color-text-accent);
+}
+
+.search-results {
+  .search-link .topic-title {
+    font-weight: 650;
+    line-height: 1.35;
+  }
+
+  .blurb {
+    line-height: 1.55;
+    color: var(--t-SanForum2027FachjournalPreview-color-text-muted);
+  }
+
+  .fps-result {
+    padding-block: 1rem;
+  }
+}
+
+#reply-control {
+  border-top: 1px solid var(--t-SanForum2027FachjournalPreview-color-border);
+  background: var(--secondary);
+
+  .d-editor-textarea-wrapper {
+    border-color: var(--primary-low-mid);
+  }
+
+  .d-editor-input,
+  .d-editor-preview {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .ProseMirror p[data-placeholder]::before {
+    color: var(--t-SanForum2027FachjournalPreview-color-text-muted);
+  }
+
+  .composer-controls .btn {
+    min-height: 2.25rem;
+  }
+}
+
+.user-main {
+  .about {
+    border-bottom: 1px solid
+      var(--t-SanForum2027FachjournalPreview-color-border);
+  }
+
+  .primary-textual .username {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .bio {
+    max-width: var(--t-SanForum2027FachjournalPreview-reading-size-inline);
+    line-height: 1.6;
+  }
+
+  .user-content {
+    padding-top: 1.5rem;
+  }
+}
+
+.d-modal__container,
+.fk-d-menu__inner-content,
+.user-menu .quick-access-panel {
+  background: var(--secondary);
+  color: var(--primary);
+}

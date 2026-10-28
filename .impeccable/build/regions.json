@@ -1,0 +1,455 @@
+{
+  "regions": [
+    {
+      "id": "header",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 0,
+        "y": 0,
+        "w": 853,
+        "h": 173
+      },
+      "note": "Deep navy header behind the original logo and utility controls",
+      "container": true
+    },
+    {
+      "id": "logo",
+      "kind": "image",
+      "pixelBox": {
+        "x": 24,
+        "y": 25,
+        "w": 530,
+        "h": 125
+      },
+      "note": "Existing SanForum white wordmark and blue emblem; use the unchanged user-supplied original PNG, not this generated rendition",
+      "parentId": "header"
+    },
+    {
+      "id": "search",
+      "kind": "control",
+      "pixelBox": {
+        "x": 598,
+        "y": 57,
+        "w": 60,
+        "h": 65
+      },
+      "note": "Native search button with magnifying glass",
+      "parentId": "header"
+    },
+    {
+      "id": "account",
+      "kind": "control",
+      "pixelBox": {
+        "x": 680,
+        "y": 52,
+        "w": 68,
+        "h": 72
+      },
+      "note": "Native account menu button",
+      "parentId": "header"
+    },
+    {
+      "id": "menu",
+      "kind": "control",
+      "pixelBox": {
+        "x": 769,
+        "y": 59,
+        "w": 62,
+        "h": 62
+      },
+      "note": "Native navigation menu button",
+      "parentId": "header"
+    },
+    {
+      "id": "categories-tab",
+      "kind": "control",
+      "pixelBox": {
+        "x": 25,
+        "y": 174,
+        "w": 402,
+        "h": 84
+      },
+      "note": "Categories destination with icon, text and blue active underline"
+    },
+    {
+      "id": "latest-tab",
+      "kind": "control",
+      "pixelBox": {
+        "x": 427,
+        "y": 174,
+        "w": 402,
+        "h": 84
+      },
+      "note": "Equally prominent recent-discussions destination with icon and text"
+    },
+    {
+      "id": "categories-heading",
+      "kind": "text",
+      "pixelBox": {
+        "x": 25,
+        "y": 299,
+        "w": 240,
+        "h": 47
+      },
+      "note": "Kategorien section heading"
+    },
+    {
+      "id": "all-categories",
+      "kind": "control",
+      "pixelBox": {
+        "x": 616,
+        "y": 302,
+        "w": 215,
+        "h": 47
+      },
+      "note": "Alle Kategorien link and chevron"
+    },
+    {
+      "id": "category-1",
+      "kind": "control",
+      "pixelBox": {
+        "x": 25,
+        "y": 365,
+        "w": 803,
+        "h": 148
+      },
+      "note": "Category name, description, small blue category marker and chevron for rescue services",
+      "reviewGroup": "category-link"
+    },
+    {
+      "id": "category-2",
+      "kind": "control",
+      "pixelBox": {
+        "x": 25,
+        "y": 513,
+        "w": 803,
+        "h": 150
+      },
+      "note": "Category name, description, small blue category marker and chevron for education",
+      "reviewGroup": "category-link"
+    },
+    {
+      "id": "category-3",
+      "kind": "control",
+      "pixelBox": {
+        "x": 25,
+        "y": 663,
+        "w": 803,
+        "h": 165
+      },
+      "note": "Category name, description, small blue category marker and chevron for equipment",
+      "reviewGroup": "category-link"
+    },
+    {
+      "id": "discussions-heading",
+      "kind": "text",
+      "pixelBox": {
+        "x": 28,
+        "y": 867,
+        "w": 418,
+        "h": 48
+      },
+      "note": "Aktuelle Diskussionen section heading"
+    },
+    {
+      "id": "new-topic",
+      "kind": "control",
+      "pixelBox": {
+        "x": 596,
+        "y": 855,
+        "w": 235,
+        "h": 72
+      },
+      "note": "Native Neues Thema primary action with icon"
+    },
+    {
+      "id": "topic-title-1",
+      "kind": "text",
+      "pixelBox": {
+        "x": 30,
+        "y": 955,
+        "w": 700,
+        "h": 40
+      },
+      "note": "Real discussion title with native status and unread indicators",
+      "reviewGroup": "topic-title"
+    },
+    {
+      "id": "topic-excerpt-1",
+      "kind": "text",
+      "pixelBox": {
+        "x": 30,
+        "y": 1001,
+        "w": 675,
+        "h": 67
+      },
+      "note": "Short real discussion excerpt with natural wrapping and truncation",
+      "reviewGroup": "topic-excerpt"
+    },
+    {
+      "id": "topic-category-1",
+      "kind": "control",
+      "pixelBox": {
+        "x": 30,
+        "y": 1067,
+        "w": 680,
+        "h": 32
+      },
+      "note": "Native category link with its existing category color",
+      "reviewGroup": "topic-category"
+    },
+    {
+      "id": "topic-author-1",
+      "kind": "control",
+      "pixelBox": {
+        "x": 30,
+        "y": 1100,
+        "w": 530,
+        "h": 60
+      },
+      "note": "Native author profile link and avatar; illustrative names never ship",
+      "reviewGroup": "topic-author"
+    },
+    {
+      "id": "topic-stats-1",
+      "kind": "control",
+      "pixelBox": {
+        "x": 720,
+        "y": 955,
+        "w": 109,
+        "h": 114
+      },
+      "note": "Native activity time and reply count links",
+      "reviewGroup": "topic-stats"
+    },
+    {
+      "id": "topic-rule-1",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 25,
+        "y": 1163,
+        "w": 803,
+        "h": 4
+      },
+      "note": "Quiet horizontal divider between discussions",
+      "reviewGroup": "topic-rule"
+    },
+    {
+      "id": "topic-title-2",
+      "kind": "text",
+      "pixelBox": {
+        "x": 30,
+        "y": 1184,
+        "w": 700,
+        "h": 43
+      },
+      "note": "Real discussion title with native status and unread indicators",
+      "reviewGroup": "topic-title"
+    },
+    {
+      "id": "topic-excerpt-2",
+      "kind": "text",
+      "pixelBox": {
+        "x": 30,
+        "y": 1230,
+        "w": 675,
+        "h": 63
+      },
+      "note": "Short real discussion excerpt with natural wrapping and truncation",
+      "reviewGroup": "topic-excerpt"
+    },
+    {
+      "id": "topic-category-2",
+      "kind": "control",
+      "pixelBox": {
+        "x": 30,
+        "y": 1296,
+        "w": 680,
+        "h": 32
+      },
+      "note": "Native category link with its existing category color",
+      "reviewGroup": "topic-category"
+    },
+    {
+      "id": "topic-author-2",
+      "kind": "control",
+      "pixelBox": {
+        "x": 30,
+        "y": 1329,
+        "w": 530,
+        "h": 60
+      },
+      "note": "Native author profile link and avatar; illustrative names never ship",
+      "reviewGroup": "topic-author"
+    },
+    {
+      "id": "topic-stats-2",
+      "kind": "control",
+      "pixelBox": {
+        "x": 720,
+        "y": 1184,
+        "w": 109,
+        "h": 114
+      },
+      "note": "Native activity time and reply count links",
+      "reviewGroup": "topic-stats"
+    },
+    {
+      "id": "topic-rule-2",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 25,
+        "y": 1397,
+        "w": 803,
+        "h": 4
+      },
+      "note": "Quiet horizontal divider between discussions",
+      "reviewGroup": "topic-rule"
+    },
+    {
+      "id": "topic-title-3",
+      "kind": "text",
+      "pixelBox": {
+        "x": 30,
+        "y": 1418,
+        "w": 700,
+        "h": 42
+      },
+      "note": "Real discussion title with native status and unread indicators",
+      "reviewGroup": "topic-title"
+    },
+    {
+      "id": "topic-excerpt-3",
+      "kind": "text",
+      "pixelBox": {
+        "x": 30,
+        "y": 1464,
+        "w": 675,
+        "h": 65
+      },
+      "note": "Short real discussion excerpt with natural wrapping and truncation",
+      "reviewGroup": "topic-excerpt"
+    },
+    {
+      "id": "topic-category-3",
+      "kind": "control",
+      "pixelBox": {
+        "x": 30,
+        "y": 1530,
+        "w": 680,
+        "h": 32
+      },
+      "note": "Native category link with its existing category color",
+      "reviewGroup": "topic-category"
+    },
+    {
+      "id": "topic-author-3",
+      "kind": "control",
+      "pixelBox": {
+        "x": 30,
+        "y": 1563,
+        "w": 530,
+        "h": 60
+      },
+      "note": "Native author profile link and avatar; illustrative names never ship",
+      "reviewGroup": "topic-author"
+    },
+    {
+      "id": "topic-stats-3",
+      "kind": "control",
+      "pixelBox": {
+        "x": 720,
+        "y": 1418,
+        "w": 109,
+        "h": 114
+      },
+      "note": "Native activity time and reply count links",
+      "reviewGroup": "topic-stats"
+    },
+    {
+      "id": "topic-rule-3",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 25,
+        "y": 1630,
+        "w": 803,
+        "h": 4
+      },
+      "note": "Quiet horizontal divider between discussions",
+      "reviewGroup": "topic-rule"
+    },
+    {
+      "id": "topic-title-4",
+      "kind": "text",
+      "pixelBox": {
+        "x": 30,
+        "y": 1650,
+        "w": 700,
+        "h": 39
+      },
+      "note": "Real discussion title with native status and unread indicators",
+      "reviewGroup": "topic-title"
+    },
+    {
+      "id": "topic-excerpt-4",
+      "kind": "text",
+      "pixelBox": {
+        "x": 30,
+        "y": 1696,
+        "w": 675,
+        "h": 65
+      },
+      "note": "Short real discussion excerpt with natural wrapping and truncation",
+      "reviewGroup": "topic-excerpt"
+    },
+    {
+      "id": "topic-category-4",
+      "kind": "control",
+      "pixelBox": {
+        "x": 30,
+        "y": 1762,
+        "w": 680,
+        "h": 32
+      },
+      "note": "Native category link with its existing category color",
+      "reviewGroup": "topic-category"
+    },
+    {
+      "id": "topic-author-4",
+      "kind": "control",
+      "pixelBox": {
+        "x": 30,
+        "y": 1795,
+        "w": 530,
+        "h": 49
+      },
+      "note": "Native author profile link and avatar; illustrative names never ship",
+      "reviewGroup": "topic-author"
+    },
+    {
+      "id": "topic-stats-4",
+      "kind": "control",
+      "pixelBox": {
+        "x": 720,
+        "y": 1650,
+        "w": 109,
+        "h": 114
+      },
+      "note": "Native activity time and reply count links",
+      "reviewGroup": "topic-stats"
+    },
+    {
+      "id": "navigation-divider",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 0,
+        "y": 254,
+        "w": 853,
+        "h": 12
+      },
+      "note": "Quiet divider below the category and recent destinations"
+    }
+  ],
+  "allowUncovered": true,
+  "coverageNote": "Inspected every region against overlay. Remaining portions of flagged grid cells are whitespace between named elements; no extra surface element is omitted."
+}
