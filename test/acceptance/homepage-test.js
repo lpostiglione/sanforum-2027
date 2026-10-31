@@ -1,7 +1,8 @@
-import { click, find, visit } from "@ember/test-helpers";
+import { click, find, settled, visit } from "@ember/test-helpers";
 import { test } from "qunit";
 import { NotificationLevels } from "discourse/lib/notification-levels";
 import { setDefaultHomepage } from "discourse/lib/utilities";
+import Topic from "discourse/models/topic";
 import { acceptance } from "discourse/tests/helpers/qunit-helpers";
 import { i18n } from "discourse-i18n";
 
@@ -13,7 +14,10 @@ acceptance("SanForum homepage", function (needs) {
   let originalThemeId;
 
   needs.mobileView();
-  needs.settings({ enable_welcome_banner: false });
+  needs.settings({
+    enable_welcome_banner: false,
+    site_mobile_logo_url: "/images/d-logo-sketch.png?sanforum-mobile",
+  });
   needs.site({ categories: [] });
 
   needs.hooks.beforeEach(function () {
@@ -120,10 +124,8 @@ acceptance("SanForum homepage", function (needs) {
       .hasText(i18n("discovery.headings.categories"));
     assert
       .dom("#site-logo")
-      .hasAttribute(
-        "src",
-        "https://sanforum.at/uploads/default/original/1X/f8607c4d93a28898e3a16b919aa9a4bfc9ec612c.png"
-      );
+      .hasClass("logo-mobile")
+      .hasAttribute("src", this.siteSettings.site_mobile_logo_url);
     assert
       .dom('.sanforum-categories a[href="/c/fixture-category/8100"]')
       .exists();
@@ -166,5 +168,62 @@ acceptance("SanForum homepage", function (needs) {
       "requests excerpts with the currently rendered theme's modifiers"
     );
     assert.strictEqual(topicRequests, 0, "uses supplied excerpts only");
+  });
+});
+
+acceptance("SanForum configured logos", function (needs) {
+  needs.settings({
+    enable_welcome_banner: false,
+    site_logo_url: "/images/d-logo-sketch.png?sanforum-desktop",
+    site_logo_dark_url: "/images/d-logo-sketch.png?sanforum-desktop-dark",
+    site_logo_small_url: "/images/d-logo-sketch-small.png?sanforum-small",
+    site_logo_small_dark_url:
+      "/images/d-logo-sketch-small.png?sanforum-small-dark",
+  });
+
+  needs.hooks.beforeEach(function () {
+    const session = this.owner.lookup("service:session");
+    this.originalLogoSession = {
+      darkModeAvailable: session.darkModeAvailable,
+      defaultColorSchemeIsDark: session.defaultColorSchemeIsDark,
+    };
+    session.setProperties({
+      darkModeAvailable: true,
+      defaultColorSchemeIsDark: false,
+    });
+  });
+
+  needs.hooks.afterEach(function () {
+    this.owner
+      .lookup("service:session")
+      .setProperties(this.originalLogoSession);
+  });
+
+  test("preserves configured desktop, small, and dark logo variants", async function (assert) {
+    await visit("/latest");
+
+    assert
+      .dom("#site-logo")
+      .hasClass("logo-big")
+      .hasAttribute("src", this.siteSettings.site_logo_url);
+    assert
+      .dom(".d-header .title picture source")
+      .hasAttribute("srcset", this.siteSettings.site_logo_dark_url);
+
+    this.owner
+      .lookup("service:header")
+      .enterTopic(
+        Topic.create({ id: 8200, title: "Logo fixture topic" }),
+        false
+      );
+    await settled();
+
+    assert
+      .dom("#site-logo")
+      .hasClass("logo-small")
+      .hasAttribute("src", this.siteSettings.site_logo_small_url);
+    assert
+      .dom(".d-header .title picture source")
+      .hasAttribute("srcset", this.siteSettings.site_logo_small_dark_url);
   });
 });

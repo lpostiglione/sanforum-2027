@@ -47,9 +47,14 @@ topics. The theme must work within Discourse’s desktop and mobile interfaces.
 
 ## Brand Commitments
 
-- Keep the SanForum.at name and existing logo. Use the
-  [supplied PNG](https://sanforum.at/uploads/default/original/1X/f8607c4d93a28898e3a16b919aa9a4bfc9ec612c.png)
-  unchanged and preserve its 593 × 120 aspect ratio.
+- Keep the SanForum.at name and use branding managed through
+  [Discourse's logo settings](https://sanforum.at/admin/config/logo). Let native
+  Discourse choose the configured primary, mobile, small and dark logos, plus
+  favicon and app-icon assets. Preserve each selected asset's intrinsic aspect
+  ratio; do not override its URL in the theme.
+- The user's 2026-10-31 instruction supersedes the original fixed-PNG requirement.
+  `assets/plates/logo.png` and its provenance are historical design references
+  only, never runtime branding sources.
 - Keep the current blue accents. On 2026-10-28, the live site’s `--tertiary`
   color was `#3877E5` in its Air Light scheme and `#1F7BC1` in Royal Dark.
   These live values are the brand reference; Canvas’s bundled defaults are not.
@@ -58,7 +63,8 @@ topics. The theme must work within Discourse’s desktop and mobile interfaces.
 
 - [SanForum.at](https://sanforum.at/): existing product language, categories,
   navigation, and rendered identity inspected on 2026-10-28.
-- The supplied logo was verified as the image used in the live site’s header.
+- The originally supplied logo was verified in the live header on 2026-10-28;
+  this historical observation does not override the admin-managed branding.
 - Blue accents were verified from the live site’s linked color-definition
   stylesheets; the dark value was also checked in the rendered page.
 - `README.md` describes the Canvas template’s existing customization points.
@@ -73,5 +79,7 @@ topics. The theme must work within Discourse’s desktop and mobile interfaces.
 ## Delivery
 
 The user approved implementation of the full theme and a separate preview theme
-on sanforum.at. The preview must remain non-default and not user-selectable
-during development. A site-wide rollout is a separate decision.
+on sanforum.at. The initial development preview was non-default and not
+user-selectable. As checked on 2026-10-31, the Git-installed theme 19 follows
+GitHub `main`, is user-selectable and remains non-default. A site-wide default
+rollout is a separate decision.
