@@ -2,6 +2,7 @@ import { click, find, settled, visit } from "@ember/test-helpers";
 import { test } from "qunit";
 import { NotificationLevels } from "discourse/lib/notification-levels";
 import { setDefaultHomepage } from "discourse/lib/utilities";
+import Session from "discourse/models/session";
 import Topic from "discourse/models/topic";
 import { acceptance } from "discourse/tests/helpers/qunit-helpers";
 import { i18n } from "discourse-i18n";
@@ -182,7 +183,7 @@ acceptance("SanForum configured logos", function (needs) {
   });
 
   needs.hooks.beforeEach(function () {
-    const session = this.owner.lookup("service:session");
+    const session = Session.current();
     this.originalLogoSession = {
       darkModeAvailable: session.darkModeAvailable,
       defaultColorSchemeIsDark: session.defaultColorSchemeIsDark,
@@ -194,9 +195,7 @@ acceptance("SanForum configured logos", function (needs) {
   });
 
   needs.hooks.afterEach(function () {
-    this.owner
-      .lookup("service:session")
-      .setProperties(this.originalLogoSession);
+    Session.current().setProperties(this.originalLogoSession);
   });
 
   test("preserves configured desktop, small, and dark logo variants", async function (assert) {
