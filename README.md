@@ -38,8 +38,9 @@ checks below are historical and do not verify the current branding fix.
 The native category hierarchy, muted-category handling, topic statuses,
 create/reply permissions, drafts and account workflows remain in Discourse.
 An explicit member homepage preference may take precedence over the theme's
-custom homepage. The combined request carries the active theme ID because
-private preview settings are not otherwise applied to its excerpt serializer.
+custom homepage. During an actual preview, the combined request carries the
+preview theme ID so its excerpt settings apply. Normal visits use Discourse's
+saved theme selection without adding a preview parameter.
 
 When the named homepage container has less than `md` (48rem) of available width,
 jump links labelled “Kategorien” and the native latest label (“Aktuell” in German)
