@@ -29,8 +29,8 @@ checks below are historical and do not verify the current branding fix.
 - `javascripts/discourse/api-initializers/theme-initializer.gjs` combines native
   discovery components, loads permission-filtered data from
   `/categories_and_latest`, appends native excerpts, renders the actual last
-  poster through native user-link/avatar/flair components. Logo selection
-  remains with native Discourse and its site settings.
+  poster through native user-link/avatar/flair components. The navy header uses
+  configured dark logos, falling back to native Discourse logo selection.
 - `locales/de.yml` and `locales/en.yml` contain the theme's labels.
 - `about.json` declares light/dark palettes and theme-specific settings. It
   disables the welcome banner and keeps the native search icon.
@@ -72,8 +72,10 @@ below. Theme-owned CSS properties use the
 and viewport mixins rather than raw queries. No optional motion is added.
 
 Branding is managed in [Discourse's logo settings](https://sanforum.at/admin/config/logo).
-Native Discourse selects the configured primary, mobile, small and dark logos;
-favicon and app icons also remain native. The theme must not force a logo URL.
+The header stays navy in both color schemes, so it prefers each configured dark
+logo (primary, mobile and small), with native selection as the fallback when a
+dark variant is unset. Favicon and app icons remain native. The theme must not
+hard-code a logo URL.
 `assets/plates/logo.png` and its origin metadata are historical design references
 only, never runtime branding sources.
 The optional upstream Canvas/banner components are not installed: their shared

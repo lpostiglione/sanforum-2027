@@ -91,6 +91,14 @@ class SanforumHome extends Component {
 
 export default apiInitializer((api) => {
   const store = api.container.lookup("service:store");
+  const siteSettings = api.container.lookup("service:site-settings");
+
+  // The header stays navy in both color schemes.
+  api.registerValueTransformer(
+    "home-logo-image-url",
+    ({ value, context: { name } }) =>
+      siteSettings[`site_${name}_dark_url`] || value
+  );
 
   api.registerBehaviorTransformer("custom-homepage-model", async () => {
     const result = await ajax("/categories_and_latest", {

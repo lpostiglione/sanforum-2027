@@ -47,6 +47,9 @@ selection of primary, mobile, small and dark logos, favicon and app icons is
 authoritative. The originally supplied PNG is archived historical reference
 only, never a runtime source.
 
+The header stays navy in both schemes. It prefers each configured dark logo
+(primary, mobile and small), falling back to native selection when unset.
+
 ## Current responsive translation
 
 The approved balanced direction above remains the history and intent. The
