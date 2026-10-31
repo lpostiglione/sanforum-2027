@@ -189,9 +189,9 @@ fallbacks; native Discourse remains the authority for complete controls and stat
   `--t-SanForum2027FachjournalPreview-color-text-muted`, blending 15% and 72% of the active foreground into the active
   paper. Both follow the native scheme without a hard-coded neutral ramp.
 
-**The Identity Rule.** Use the logos and icons selected by native Discourse from
-the admin branding settings. Preserve their intrinsic proportions and both brand
-blues; never hard-code a historical logo URL into the theme.
+**The Identity Rule.** Use admin-configured dark logos on the navy header, with
+native selection as fallback. Keep other icons native. Preserve their intrinsic
+proportions and both brand blues; never hard-code a historical logo URL.
 
 ## Typography
 
@@ -334,8 +334,10 @@ native rather than receiving invented theme-specific colors.
 
 Logo and icon sources belong to
 [Discourse's logo settings](https://sanforum.at/admin/config/logo). Native
-Discourse selects the configured primary, mobile, small and dark logo variants;
-favicon and app icons stay native as well. The archived `assets/plates/logo.png`
+Discourse provides the configured primary, mobile, small and dark logo variants.
+Because the header stays navy in both schemes, it prefers each configured dark
+logo, falling back to native selection when that variant is unset. Favicon and
+app icons stay native. The archived `assets/plates/logo.png`
 is historical reference material only and must not be used as a runtime source.
 
 The identity bar uses white icons and a translucent white hover/focus surface.

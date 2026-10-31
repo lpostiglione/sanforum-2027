@@ -18,6 +18,7 @@ acceptance("SanForum homepage", function (needs) {
   needs.settings({
     enable_welcome_banner: false,
     site_mobile_logo_url: "/images/d-logo-sketch.png?sanforum-mobile",
+    site_mobile_logo_dark_url: "",
   });
   needs.site({ categories: [] });
 
@@ -198,17 +199,45 @@ acceptance("SanForum configured logos", function (needs) {
     Session.current().setProperties(this.originalLogoSession);
   });
 
-  test("preserves configured desktop, small, and dark logo variants", async function (assert) {
+  for (const defaultColorSchemeIsDark of [false, true]) {
+    test(`uses configured dark header logos with a ${defaultColorSchemeIsDark ? "dark" : "light"} color scheme`, async function (assert) {
+      Session.current().set(
+        "defaultColorSchemeIsDark",
+        defaultColorSchemeIsDark
+      );
+      await visit("/latest");
+
+      assert
+        .dom("#site-logo")
+        .hasClass("logo-big")
+        .hasAttribute("src", this.siteSettings.site_logo_dark_url);
+      assert.dom(".d-header .title picture").doesNotExist();
+
+      this.owner
+        .lookup("service:header")
+        .enterTopic(
+          Topic.create({ id: 8200, title: "Logo fixture topic" }),
+          false
+        );
+      await settled();
+
+      assert
+        .dom("#site-logo")
+        .hasClass("logo-small")
+        .hasAttribute("src", this.siteSettings.site_logo_small_dark_url);
+      assert.dom(".d-header .title picture").doesNotExist();
+    });
+  }
+
+  test("falls back to configured desktop and small logos without dark variants", async function (assert) {
+    this.siteSettings.site_logo_dark_url = "";
+    this.siteSettings.site_logo_small_dark_url = "";
     await visit("/latest");
 
     assert
       .dom("#site-logo")
       .hasClass("logo-big")
       .hasAttribute("src", this.siteSettings.site_logo_url);
-    assert
-      .dom(".d-header .title picture source")
-      .hasAttribute("srcset", this.siteSettings.site_logo_dark_url);
-
     this.owner
       .lookup("service:header")
       .enterTopic(
@@ -221,8 +250,5 @@ acceptance("SanForum configured logos", function (needs) {
       .dom("#site-logo")
       .hasClass("logo-small")
       .hasAttribute("src", this.siteSettings.site_logo_small_url);
-    assert
-      .dom(".d-header .title picture source")
-      .hasAttribute("srcset", this.siteSettings.site_logo_small_dark_url);
   });
 });

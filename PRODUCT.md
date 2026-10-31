@@ -49,9 +49,10 @@ topics. The theme must work within Discourse’s desktop and mobile interfaces.
 
 - Keep the SanForum.at name and use branding managed through
   [Discourse's logo settings](https://sanforum.at/admin/config/logo). Let native
-  Discourse choose the configured primary, mobile, small and dark logos, plus
-  favicon and app-icon assets. Preserve each selected asset's intrinsic aspect
-  ratio; do not override its URL in the theme.
+  Discourse provide the configured primary, mobile, small and dark logos, plus
+  favicon and app-icon assets. The navy header prefers each configured dark logo,
+  with native selection as fallback when unset. Preserve each selected asset's
+  intrinsic aspect ratio; never hard-code an asset URL in the theme.
 - The user's 2026-10-31 instruction supersedes the original fixed-PNG requirement.
   `assets/plates/logo.png` and its provenance are historical design references
   only, never runtime branding sources.
