@@ -7,12 +7,14 @@ import Topic from "discourse/models/topic";
 import { acceptance } from "discourse/tests/helpers/qunit-helpers";
 import { i18n } from "discourse-i18n";
 
-acceptance("SanForum homepage", function (needs) {
+function homepageTests(needs, previewThemeId) {
   let combinedRequests;
   let topicRequests;
   let requestedThemeId;
   let themeMeta;
   let originalThemeId;
+  let originalUrl;
+  let originalHistoryState;
 
   needs.mobileView();
   needs.settings({
@@ -23,6 +25,14 @@ acceptance("SanForum homepage", function (needs) {
   needs.site({ categories: [] });
 
   needs.hooks.beforeEach(function () {
+    originalUrl = window.location.href;
+    originalHistoryState = window.history.state;
+    const url = new URL(originalUrl);
+    url.searchParams.delete("preview_theme_id");
+    if (previewThemeId) {
+      url.searchParams.set("preview_theme_id", previewThemeId);
+    }
+    window.history.replaceState(originalHistoryState, "", url);
     combinedRequests = 0;
     topicRequests = 0;
     requestedThemeId = undefined;
@@ -36,6 +46,7 @@ acceptance("SanForum homepage", function (needs) {
   });
 
   needs.hooks.afterEach(function () {
+    window.history.replaceState(originalHistoryState, "", originalUrl);
     if (originalThemeId === undefined) {
       themeMeta.remove();
     } else {
@@ -166,11 +177,36 @@ acceptance("SanForum homepage", function (needs) {
     assert.strictEqual(combinedRequests, 1, "loads the shared overview once");
     assert.strictEqual(
       requestedThemeId,
-      "8102",
-      "requests excerpts with the currently rendered theme's modifiers"
+      previewThemeId,
+      "only forwards an explicit preview ID, not the selected theme ID"
     );
     assert.strictEqual(topicRequests, 0, "uses supplied excerpts only");
+
+    const url = new URL(window.location.href);
+    url.searchParams.delete("preview_theme_id");
+    window.history.replaceState(window.history.state, "", url);
+    await visit("/latest");
+    await visit("/");
+
+    assert.strictEqual(combinedRequests, 2, "reloads the overview on return");
+    assert.strictEqual(
+      requestedThemeId,
+      previewThemeId,
+      "preserves the initial preview choice after its URL parameter disappears"
+    );
+    assert
+      .dom(".sanforum-discussions .topic-excerpt")
+      .hasText("Synthetic topic excerpt.");
+    assert.strictEqual(topicRequests, 0, "still uses supplied excerpts only");
   });
+}
+
+acceptance("SanForum homepage", function (needs) {
+  homepageTests(needs);
+});
+
+acceptance("SanForum homepage preview", function (needs) {
+  homepageTests(needs, "8103");
 });
 
 acceptance("SanForum configured logos", function (needs) {

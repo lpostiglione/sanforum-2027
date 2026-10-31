@@ -8,7 +8,6 @@ import TopicExcerpt from "discourse/components/topic-list/topic-excerpt";
 import { ajax } from "discourse/lib/ajax";
 import { apiInitializer } from "discourse/lib/api";
 import getURL from "discourse/lib/get-url";
-import { currentThemeId } from "discourse/lib/theme-selector";
 import CategoryList from "discourse/models/category-list";
 import TopicList from "discourse/models/topic-list";
 import DUserAvatarFlair from "discourse/ui-kit/d-user-avatar-flair";
@@ -92,6 +91,10 @@ class SanforumHome extends Component {
 export default apiInitializer((api) => {
   const store = api.container.lookup("service:store");
   const siteSettings = api.container.lookup("service:site-settings");
+  // Preserve the initial preview across client-side navigation.
+  const previewThemeId = new URLSearchParams(window.location.search).get(
+    "preview_theme_id"
+  );
 
   // The header stays navy in both color schemes.
   api.registerValueTransformer(
@@ -102,7 +105,7 @@ export default apiInitializer((api) => {
 
   api.registerBehaviorTransformer("custom-homepage-model", async () => {
     const result = await ajax("/categories_and_latest", {
-      data: { preview_theme_id: currentThemeId() },
+      data: previewThemeId ? { preview_theme_id: previewThemeId } : {},
     });
 
     return {
