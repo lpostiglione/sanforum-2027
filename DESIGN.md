@@ -127,14 +127,14 @@ components:
 **Creative North Star: "Das Fachjournal"**
 
 SanForum combines the clarity of a specialist journal with the familiar behavior
-of a discussion forum. A deep navy identity bar holds the unchanged SanForum
+of a discussion forum. A deep navy identity bar holds SanForum's admin-configured
 logo. Blue provides navigation and action emphasis; neutral surfaces, continuous
 rows and quiet dividers give real discussions room to lead.
 
 The system serves reading and participation. It adapts the approved Fachjournal
 direction to native Discourse components, preserving their content, hierarchy,
-permissions and interaction states. The original logo and existing blue accents
-are binding identity assets; the generated comp is a composition reference.
+permissions and interaction states. Admin-managed branding and the existing blue
+accents are authoritative; the generated comp is a composition reference.
 
 **Key Characteristics:**
 
@@ -189,8 +189,9 @@ fallbacks; native Discourse remains the authority for complete controls and stat
   `--t-SanForum2027FachjournalPreview-color-text-muted`, blending 15% and 72% of the active foreground into the active
   paper. Both follow the native scheme without a hard-coded neutral ramp.
 
-**The Identity Rule.** Keep the supplied logo and both brand blues unchanged;
-derive functional contrast colors without editing those identity assets.
+**The Identity Rule.** Use the logos and icons selected by native Discourse from
+the admin branding settings. Preserve their intrinsic proportions and both brand
+blues; never hard-code a historical logo URL into the theme.
 
 ## Typography
 
@@ -278,7 +279,7 @@ the 2.5rem gap until its container can support two columns.
 Ordinary mobile category rows and discussion rows keep 1rem vertical padding.
 
 The mobile logo is capped at `min(46vw, 210px)` wide and 34px high. At viewport
-`md` and above it is capped at 40px high. Preserve its intrinsic 593:120 aspect ratio. The small
+`md` and above it is capped at 40px high. Preserve the selected asset's intrinsic aspect ratio. The small
 native logo variant has a 32px height.
 
 Headings and rows use the frontmatter spacing rhythm. Wider overview rows use
@@ -330,6 +331,12 @@ its native editor, preview, toolbar, validation and draft behavior, with a
 native rather than receiving invented theme-specific colors.
 
 ### Navigation
+
+Logo and icon sources belong to
+[Discourse's logo settings](https://sanforum.at/admin/config/logo). Native
+Discourse selects the configured primary, mobile, small and dark logo variants;
+favicon and app icons stay native as well. The archived `assets/plates/logo.png`
+is historical reference material only and must not be used as a runtime source.
 
 The identity bar uses white icons and a translucent white hover/focus surface.
 Native discovery links use weight 600, the navigation radius and the frontmatter
@@ -385,7 +392,7 @@ continue to be managed by Discourse.
 
 ### Do:
 
-- **Do** preserve the original SanForum logo, its aspect ratio and both brand blues.
+- **Do** use admin-configured SanForum branding, preserving each asset's aspect ratio and both brand blues.
 - **Do** use the active Discourse palette and the theme's derived link/action tokens.
 - **Do** retain native navigation, permissions, drafts, status badges and account behavior.
 - **Do** allow long German titles and real category hierarchies to determine row height.
@@ -395,7 +402,7 @@ continue to be managed by Discourse.
 ### Don't:
 
 - **Don't** copy illustrative comp content into the forum or use it as production data.
-- **Don't** stretch, recolor or crop the supplied logo.
+- **Don't** stretch, recolor or crop the selected logo, or override admin branding with the archived PNG.
 - **Don't** replace continuous reading rows with individually elevated cards.
 - **Don't** reduce visited titles or supporting counts to faint decorative text.
 - **Don't** truncate category or subcategory names with ellipses at any width.

@@ -92,12 +92,6 @@ class SanforumHome extends Component {
 export default apiInitializer((api) => {
   const store = api.container.lookup("service:store");
 
-  api.registerValueTransformer(
-    "home-logo-image-url",
-    () =>
-      "https://sanforum.at/uploads/default/original/1X/f8607c4d93a28898e3a16b919aa9a4bfc9ec612c.png"
-  );
-
   api.registerBehaviorTransformer("custom-homepage-model", async () => {
     const result = await ajax("/categories_and_latest", {
       data: { preview_theme_id: currentThemeId() },

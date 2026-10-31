@@ -1,19 +1,20 @@
 # SanForum Fachjournal
 
 A Discourse theme for sanforum.at, based on the approved balanced
-Fachjournal composition. It preserves the original SanForum logo and blue
+Fachjournal composition. It uses SanForum's admin-managed branding and existing blue
 accents, with a category directory and recent discussions on the same homepage.
 
 ## Preview
 
-- [Open the preview](https://sanforum.at/?preview_theme_id=18)
-- [Theme administration](https://sanforum.at/admin/customize/themes/18)
-- Light palette: SanForum Fachjournal Light (42).
-- Dark palette: SanForum Fachjournal Dark (43).
+- [Open the preview](https://sanforum.at/?preview_theme_id=19)
+- [Theme administration](https://sanforum.at/admin/customize/themes/19)
+- Light palette: SanForum Fachjournal Light (45).
+- Dark palette: SanForum Fachjournal Dark (46).
 
-Theme 18 is non-default and not user-selectable. Staff can preview it. The live
-default remains theme 15. Theme 17 is the unused empty preparation theme from
-setup; it contains no implementation.
+As checked on 2026-10-31, theme 19 is installed from
+[GitHub `main`](https://github.com/lpostiglione/sanforum-2027/tree/main),
+user-selectable and non-default. It is not the live default theme. The theme 18
+checks below are historical and do not verify the current branding fix.
 
 ## Implementation
 
@@ -28,8 +29,8 @@ setup; it contains no implementation.
 - `javascripts/discourse/api-initializers/theme-initializer.gjs` combines native
   discovery components, loads permission-filtered data from
   `/categories_and_latest`, appends native excerpts, renders the actual last
-  poster through native user-link/avatar/flair components, and preserves the
-  supplied logo through Discourse's native logo transformer.
+  poster through native user-link/avatar/flair components. Logo selection
+  remains with native Discourse and its site settings.
 - `locales/de.yml` and `locales/en.yml` contain the theme's labels.
 - `about.json` declares light/dark palettes and theme-specific settings. It
   disables the welcome banner and keeps the native search icon.
@@ -65,17 +66,20 @@ The revised dark palette uses brighter text, a deeper reading surface and a
 distinct blue sidebar. The original brand blues and light palette are unchanged.
 Scheme-aware link, action, muted-text and rule tokens provide the contrast and
 separation; `DESIGN.md` records their current values. Homepage heading margins
-and online-status spacing are compact. This revision's runtime verification is
-recorded below. Theme-owned CSS properties use the
+and online-status spacing are compact. Historical refinement checks are recorded
+below. Theme-owned CSS properties use the
 `--t-SanForum2027FachjournalPreview-` prefix; the source uses Discourse's container
 and viewport mixins rather than raw queries. No optional motion is added.
 
-The original logo is served from the supplied SanForum upload URL. Its unchanged
-pixels are also archived in `assets/plates/logo.png` with origin metadata.
+Branding is managed in [Discourse's logo settings](https://sanforum.at/admin/config/logo).
+Native Discourse selects the configured primary, mobile, small and dark logos;
+favicon and app icons also remain native. The theme must not force a logo URL.
+`assets/plates/logo.png` and its origin metadata are historical design references
+only, never runtime branding sources.
 The optional upstream Canvas/banner components are not installed: their shared
 settings hide controls and would affect unrelated themes.
 
-### Current refinement validation
+### Historical theme 18 refinement validation
 
 The refinement was checked at 390px in light and dark mode, 820px tablet width,
 and 1206px desktop width in dark mode. Search returned 50 results without
@@ -89,10 +93,10 @@ At a 1000px viewport, opening the sidebar left a 722.56px homepage container
 with one column and visible jump links; closing it yielded 970.08px, two columns
 and hidden jump links. The collapsed sidebar had no border, and neither state
 showed overflow or clipped category names. These are runtime checks, not a full
-pixel-match claim. The QUnit theme harness was not run. Theme 18 remains a
-non-default preview.
+pixel-match claim. The QUnit theme harness was not run. Theme 18 was the
+non-default preview used for this validation.
 
-### Earlier localized homepage validation
+### Earlier theme 18 localized homepage validation
 
 Before the later palette, typography and discussion-row revision on 2026-10-28,
 theme 18's installed CSS and JS matched the repository at that point. At
@@ -147,10 +151,11 @@ Import through **Administration → Themes → Install → From your device**. A
 archive import creates a new theme; it does not update one with the same name.
 Keep the new theme non-default and not user-selectable, then explicitly assign
 its matching dark palette. Existing theme-specific settings survive imports.
-Use the authenticated Discourse theme development tool or an archive import to
-deliver the modular source tree. The current theme 18 preview uses an equivalent
-expanded stylesheet in its Common CSS editor: module imports are resolved before
-pasting, while Discourse compiles the result. Pasting the short
+Theme 19 receives the modular source tree from its GitHub `main` installation.
+The authenticated Discourse theme development tool or an archive import can also
+deliver that tree. The historical theme 18 preview used an equivalent expanded
+stylesheet in its Common CSS editor: module imports were resolved before
+pasting, while Discourse compiled the result. Pasting the short
 `common/common.scss` entrypoint alone cannot install its module files. Common JS
 comes from the theme initializer. Font or metadata changes require an archive
 import or the authenticated development tool.

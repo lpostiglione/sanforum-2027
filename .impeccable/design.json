@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-28T23:05:46+00:00",
+  "generatedAt": "2026-10-31T17:48:54+00:00",
   "title": "Design System: SanForum Fachjournal",
   "extensions": {
     "colorMeta": {
@@ -439,7 +439,7 @@
   ],
   "narrative": {
     "northStar": "Das Fachjournal",
-    "overview": "SanForum combines the clarity of a specialist journal with the familiar behavior\nof a discussion forum. A deep navy identity bar holds the unchanged SanForum\nlogo. Blue provides navigation and action emphasis; neutral surfaces, continuous\nrows and quiet dividers give real discussions room to lead.\n\nThe system serves reading and participation. It adapts the approved Fachjournal\ndirection to native Discourse components, preserving their content, hierarchy,\npermissions and interaction states. The original logo and existing blue accents\nare binding identity assets; the generated comp is a composition reference.",
+    "overview": "SanForum combines the clarity of a specialist journal with the familiar behavior\nof a discussion forum. A deep navy identity bar holds SanForum's admin-configured\nlogo. Blue provides navigation and action emphasis; neutral surfaces, continuous\nrows and quiet dividers give real discussions room to lead.\n\nThe system serves reading and participation. It adapts the approved Fachjournal\ndirection to native Discourse components, preserving their content, hierarchy,\npermissions and interaction states. Admin-managed branding and the existing blue\naccents are authoritative; the generated comp is a composition reference.",
     "keyCharacteristics": [
       "One humanist sans for navigation, discussion titles and reading.",
       "Continuous content rows separated by quiet rules.",
@@ -449,7 +449,7 @@
     "rules": [
       {
         "name": "The Identity Rule",
-        "body": "Keep the supplied logo and both brand blues unchanged;\nderive functional contrast colors without editing those identity assets.",
+        "body": "Use the logos and icons selected by native Discourse from\nthe admin branding settings. Preserve their intrinsic proportions and both brand\nblues; never hard-code a historical logo URL into the theme.",
         "section": "colors"
       },
       {
@@ -464,7 +464,7 @@
       }
     ],
     "dos": [
-      "**Do** preserve the original SanForum logo, its aspect ratio and both brand blues.",
+      "**Do** use admin-configured SanForum branding, preserving each asset's aspect ratio and both brand blues.",
       "**Do** use the active Discourse palette and the theme's derived link/action tokens.",
       "**Do** retain native navigation, permissions, drafts, status badges and account behavior.",
       "**Do** allow long German titles and real category hierarchies to determine row height.",
@@ -473,7 +473,7 @@
     ],
     "donts": [
       "**Don't** copy illustrative comp content into the forum or use it as production data.",
-      "**Don't** stretch, recolor or crop the supplied logo.",
+      "**Don't** stretch, recolor or crop the selected logo, or override admin branding with the archived PNG.",
       "**Don't** replace continuous reading rows with individually elevated cards.",
       "**Don't** reduce visited titles or supporting counts to faint decorative text.",
       "**Don't** truncate category or subcategory names with ellipses at any width.",

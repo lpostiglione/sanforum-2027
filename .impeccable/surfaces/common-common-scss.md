@@ -19,7 +19,7 @@ Approved comp: `.impeccable/mocks/decision/fachjournal.png`. The user selected B
 
 **THESIS:** Make specialist discussion readable and reachable through a balanced category directory followed by recent conversation.
 
-**OWN-WORLD:** A deep navy identity bar, the original white-and-blue SanForum logo, current blue accents, neutral reading surfaces, one humanist UI sans, continuous rows and quiet dividers. Light and dark palettes retain the same hierarchy.
+**OWN-WORLD:** A deep navy identity bar, SanForum's admin-configured branding, current blue accents, neutral reading surfaces, one humanist UI sans, continuous rows and quiet dividers. Light and dark palettes retain the same hierarchy.
 
 **STORY:** Members orient by category, catch up through meaningful titles and short excerpts, then read, search or participate with familiar Discourse controls.
 
@@ -31,15 +31,21 @@ Approved comp: `.impeccable/mocks/decision/fachjournal.png`. The user selected B
 
 ## Translation constraints
 
-The original logo and existing blue accents override generated approximations. Comp topic names, authors, initials, counts, category examples and explanatory labels are illustrative and never seeded into production. Preserve actual permissions, hierarchy, mute states, links, excerpts, composer drafts and core navigation. Long German content wraps. The native directory can be taller with real categories; the paired top destinations keep recent discussion equally reachable.
+Admin-configured logos/icons and existing blue accents override generated approximations. Comp topic names, authors, initials, counts, category examples and explanatory labels are illustrative and never seeded into production. Preserve actual permissions, hierarchy, mute states, links, excerpts, composer drafts and core navigation. Long German content wraps. The native directory can be taller with real categories; the paired top destinations keep recent discussion equally reachable.
 
 ## Scope
 
-Overview, lists, topic reading, quick/full search, composer, profiles, account, notifications, menus, forms, dialogs, light/dark, mobile and desktop. Preview-only installation, non-default and not user-selectable.
+Overview, lists, topic reading, quick/full search, composer, profiles, account, notifications, menus, forms, dialogs, light/dark, mobile and desktop. The initial preview was non-default and not user-selectable. The current Git-installed theme 19 is user-selectable and non-default; site-wide default rollout remains separate.
 
 ## Approved native adaptation
 
-On 2026-10-28 the user answered “yes” to adapting the approved composition to native Discourse and validating the real preview. The original logo, blue accents, balanced category/recent access and reading hierarchy stay authoritative. Real content, core controls, responsive behavior and native integration determine exact pixels. Standalone screenshot gates are replaced by real-runtime checks and an independent finish review; no approval receipts are fabricated.
+On 2026-10-28 the user answered “yes” to adapting the approved composition to native Discourse and validating the real preview. At that time, the original logo, blue accents, balanced category/recent access and reading hierarchy were authoritative. Real content, core controls, responsive behavior and native integration determine exact pixels. Standalone screenshot gates are replaced by real-runtime checks and an independent finish review; no approval receipts are fabricated.
+
+On 2026-10-31 the user superseded the fixed-logo clause: branding must come from
+[Discourse's logo settings](https://sanforum.at/admin/config/logo). Native
+selection of primary, mobile, small and dark logos, favicon and app icons is
+authoritative. The originally supplied PNG is archived historical reference
+only, never a runtime source.
 
 ## Current responsive translation
 
@@ -94,5 +100,6 @@ their revision. Current refinement and final container checks are recorded in
 and viewport libraries. Theme properties use the
 `--t-SanForum2027FachjournalPreview-` owner prefix. Optional transitions were
 removed; native motion remains unchanged. Native avatar flair is inset 14px from
-the compact poster's block start and inline start. The preview's Common CSS uses
-an expanded equivalent of these source modules, not the entrypoint alone.
+the compact poster's block start and inline start. Theme 19 receives the modular
+source through its GitHub `main` installation. Historical theme 18 used an
+expanded equivalent in Common CSS, not the entrypoint alone.
